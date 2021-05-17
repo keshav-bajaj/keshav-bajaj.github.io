@@ -1,5 +1,204 @@
 <html>
-<body>
-<h1>Hello Friend</h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="en-gb" />
+    <meta name="author" content="Keshav Bajaj" />
+    <meta http-equiv="content-language" content="en-gb" />
+    <meta name="keywords"
+      content="keshav,bajaj,Keshav,Bajaj,keshavbajaj,keshav bajaj,Keshav Bajaj,keshav bajaj linkedin,keshav linkedin,bajaj linkedin,web development,web design,design,web,website,amity sec-46,gurugram,delhi,haryana,gurgaon,amity gurgaon,keshav facebook,keshav instagram,keshav bajaj instagram,Keshav Bajaj,Keshav bajaj,keshav Bajaj"
+    />
+    <meta name="msvalidate.01" content="4FC67C6E43858D0FED50ED317830F339" />
+    <meta
+      name="google-site-verification"
+      content="K3eFZaGNRg14PDr4sBZNhF9ufLxk8CUMTSSP8-LrgVQ"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="description"
+      content="I am Keshav Bajaj. I tinker and create awesome products."
+    />
+    <meta property="og:url" content="https://keshav-bajaj.github.io" />
+    <meta
+      property="og:description"
+      content="I am Keshav Bajaj. I tinker and create awesome products."
+    />
+    <meta property="og:site_name" content="Keshav Bajaj" />
+    <meta property="og:title" content="Keshav Bajaj" />
+    <meta
+      property="og:image"
+      content="https://keshav-bajaj.github.io/img/favicon.png"
+    />
+    <title>Keshav Bajaj</title>
+    <script src="./js/js-fluid-meter.js"></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="canonical" href="https://keshav-bajaj.github.io/" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body onload="loadfunc()">
+    <div id="modal">
+      <div id="modal-content">
+        If you want to collaborate with me, hit me up!<br /><button
+          onclick="hidemodal()"
+        >
+          Cancel</button
+        ><button onclick="showcontactmodal()">Contact</button>
+      </div>
+    </div>
+    <div id="landing-page">
+      <div id="home">
+        <h1>Keshav Bajaj</h1>
+        <div id="info">
+          Hello I'm <span id="age"></span>. I tinker and create awesome
+          products!<br /><img src="./assets/main.png" />
+        </div>
+      </div>
+    </div>
+    <div id="top-strip"></div>
+
+    <noscript>
+      <link rel="stylesheet" href="./css/noscript.css" />
+      <center>
+        <h1 style="font-size: 55px">Keshav Bajaj</h1>
+      </center>
+      <div id="contact" style="display: block">
+        <h1>Contact</h1>
+        <form
+          id="main-form"
+          action="https://formsubmit.co/bajajkeshav111@gmail.com"
+          method="post"
+        >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          /><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          /><br />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            required
+            placeholder="Subject"
+          /><br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            required
+          ></textarea
+          ><br />
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+          <div id="contact-btn">
+            <ul>
+              <li style="padding-right: 4px">
+                <a
+                  href="http://github.com/keshav-bajaj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li style="padding-right: 4px">
+                <a
+                  href="https://www.instagram.com/_keshav.bajaj_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li style="padding-right: 4px">
+                <a
+                  href="https://in.linkedin.com/in/keshav-bajaj-3b7462193"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="mailto:bajajkeshav111@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div id="work" style="display: block">
+        <h1>My Work</h1>
+      </div>
+      <div id="skills" style="display: block">
+        <h1>My Skills</h1>
+        <div id="skills-meter">
+          <div id="html-container">
+            <p>HTML5</p>
+            <div id="html-meter"></div>
+          </div>
+          <div id="css-container">
+            <p>CSS3</p>
+            <div id="css-meter"></div>
+          </div>
+          <div id="js-container">
+            <p>JavaScript</p>
+            <div id="js-meter"></div>
+          </div>
+          <div id="python-container">
+            <p>Python</p>
+            <div id="python-meter"></div>
+          </div>
+        </div>
+        <div id="extra-skills"></div>
+      </div>
+      <footer id="navbar" style="display: block">
+        <ul>
+          <a href="#home"
+            ><li class="nav-links">
+              <i class="fa fa-home"></i> <br />
+              Home
+            </li></a
+          >
+          <a href="#skills"
+            ><li class="nav-links">
+              <i class="fa fa-code"></i><br />
+              My Skills
+            </li></a
+          >
+          <a href="#work"
+            ><li class="nav-links">
+              <i class="fa fa-briefcase"></i><br />
+              My Work
+            </li></a
+          >
+          <a href="#contact"
+            ><li class="nav-links">
+              <i class="fa fa-mobile"></i><br />
+              Contact
+            </li></a
+          >
+        </ul>
+      </footer>
+      <div id="div-spacer"></div>
+    </noscript>
+  </body>
 </html>
