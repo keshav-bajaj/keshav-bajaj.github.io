@@ -7,23 +7,7 @@
   </head>
   <body>
     <script>
-      var fhj =0;
-      const urls = ["/cryptowriter/","/cryptowriter.js/","/cryptowriter.js","/cryptowriter"]
-      var fg = document.location.pathname;
-      fg = fg.toLowerCase();
-      for(i = 0;i<urls.length;i++){
-        if(fg == urls[i]){
-          console.log("done " + document.location.origin + "/cryptoWriter/");
-          setTimeout(()=>{
-            location.replace(document.location.origin + "/cryptoWriter/");
-          },5000)
-        } else {
-          var fhj =1;
-        }
-      }
-      if(fhj == 1){
-          document.write(document.location.pathname + " Path does not exist");
-      }
+var fhj=0;const urls=["/cryptowriter/","/cryptowriter.js/","/cryptowriter.js","/cryptowriter","/cryptowriter/index.html/","/cryptowriter/index/","/cryptowriter/index.html","/cryptowriter/index","/cryptowriter.js/index.html/","/cryptowriter.js/index/","/cryptowriter.js/index.html","/cryptowriter.js/index"];var fg=document.location.pathname;for(fg=fg.toLowerCase(),i=0;i<urls.length;i++)if(fg==urls[i])console.log("done "+document.location.origin+"/cryptoWriter/"),setTimeout(()=>{location.replace(document.location.origin+"/cryptoWriter/")},500);else var fhj=1;1==fhj&&document.write(document.location.pathname+" Path does not exist");
     </script>
   </body>
 </html>
