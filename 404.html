@@ -7,7 +7,15 @@
   </head>
   <body>
     <script>
-      const urls=["cryptoWriter","projects/drawingtool","projects/findthecat","projects/colorflipper","projects/daysyouhavelived"];for(var fgg,url=document.location,path=document.location.pathname,lpath=path.toLocaleLowerCase(),i=0,i=0;i<urls.length;i++){let o=urls[i].toLocaleLowerCase();1==(fgg=lpath=="/"+o||lpath=="/"+o+"/"||lpath=="/"+o+"/index.html"||lpath=="/"+o+"/index"?1:0)&&location.replace(document.location.origin+"/"+urls[i]+"/")}"/cryptowriter.js/"==lpath.toLocaleLowerCase?location.replace(document.location.origin+"/cryptoWriter/"):location.replace(document.location.origin);
+      var fg = document.location.pathname;
+      fg = fg.toLowerCase();
+      if(fg == "/cryptowriter/"){
+        console.log("done crypto");
+      } else if(fg == "/cryptowriter.js/"){
+        console.log("done crypto.js");
+      } else{ 
+        document.write(fg + " Path does not exist");
+      }
     </script>
   </body>
 </html>
